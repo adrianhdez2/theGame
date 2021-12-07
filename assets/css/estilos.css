@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.div__principal{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 30% auto 5%;
+}
+
+.titulo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: linear-gradient(to top, #000000,#ad0606);
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+
+.titulo h1 span{
+    color: #e4d1d1;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container__detalles{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #000000;
+}
+
+.container__niveles{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.enlaces{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+}
+
+.enlaces__niveles{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: flex-start;
+}
+
+.btn{
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.img{
+    width: 30px;
+    margin-right: 10px;
+    transition: transform .5s;
+}
+
+#facil{
+    background: #1aaf1a;
+    transition: transform .3s;
+}
+
+#medio{
+    background: #2c5fcc;
+    transition: transform .3s;
+}
+
+#dificil{
+    background: #df2c2c;
+    transition: transform .3s;
+}
+
+#facil:hover{
+    background: #108b10;
+    transition: transform .3s;
+    transform: scale(2);
+}
+
+#facil:hover .img{
+    transition: transform .5s;
+    transform: rotate(400grad);
+}
+
+#medio:hover{
+    background: #204dad;
+    transform: scale(2);
+}
+
+#medio:hover .img{
+    transition: transform .5s;
+    transform: rotate(400grad);
+}
+
+#dificil:hover{
+    background: #b31a1a;
+    transform: scale(2);
+}
+
+#dificil:hover .img{
+    transition: transform .5s;
+    transform: rotate(400grad);
+}
+
+.footer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:  center;
+    color: #fff;
+    background: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container__footer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+@media screen and (max-width:440px){
+    .enlaces__niveles{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer{
+        font-size: 12px;
+    }
+}
